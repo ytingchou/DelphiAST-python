@@ -1,0 +1,19 @@
+# Python cache / virtual env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Native bridge build output
+.native_build/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delphiast-python"
+version = "0.1.0"
+description = "Python 3.11 bridge implementation of DelphiAST"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "DelphiAST maintainers" }]
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+delphiast-parser-demo = "delphiast.demos.parser_demo:main"
+delphiast-project-indexer-demo = "delphiast.demos.project_indexer_demo:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+delphiast = [
+  "_vendor/**/*.pas",
+  "_vendor/**/*.inc",
+  "_vendor/**/*.lpr",
+  "_vendor/**/*.rsj",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q"
+testpaths = ["tests"]
