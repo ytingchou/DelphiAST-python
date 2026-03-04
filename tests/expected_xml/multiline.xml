@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="multilie">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="24" end_col="1">
+    <CONSTANTS  line_seq="0" line="7" col="1">
+      <CONSTANT  line_seq="0" line="8" col="3">
+        <NAME  line_seq="0" line="8" col="3" value="Str1"/>
+        <VALUE  line_seq="0" line="8" col="10">
+          <EXPRESSION  line_seq="0" line="8" col="10">
+            <LITERAL  line_seq="0" line="8" col="20" value="Str&apos;Str" type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="9" col="3">
+        <NAME  line_seq="0" line="9" col="3" value="Str2"/>
+        <VALUE  line_seq="0" line="9" col="10">
+          <EXPRESSION  line_seq="0" line="9" col="10">
+            <LITERAL  line_seq="0" line="9" col="12" value="" type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="10" col="3">
+        <NAME  line_seq="0" line="10" col="3" value="Str3"/>
+        <VALUE  line_seq="0" line="10" col="10">
+          <EXPRESSION  line_seq="0" line="10" col="10">
+            <LITERAL  line_seq="0" line="13" col="6" value="
+     TEST
+     STRING
+  " type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="14" col="3">
+        <NAME  line_seq="0" line="14" col="3" value="Str4"/>
+        <VALUE  line_seq="0" line="14" col="10">
+          <EXPRESSION  line_seq="0" line="14" col="10">
+            <LITERAL  line_seq="0" line="17" col="8" value="
+     TEST &apos;&apos;&apos;
+     STRING
+  " type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="18" col="3">
+        <NAME  line_seq="0" line="18" col="3" value="Str5"/>
+        <VALUE  line_seq="0" line="18" col="10">
+          <EXPRESSION  line_seq="0" line="18" col="10">
+            <LITERAL  line_seq="0" line="23" col="8" value="
+     TEST
+      &apos;&apos;&apos;&apos;
+     STRING
+     text&apos;&apos;&apos;&apos;
+  " type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+    </CONSTANTS>
+  </IMPLEMENTATION>
+</UNIT>

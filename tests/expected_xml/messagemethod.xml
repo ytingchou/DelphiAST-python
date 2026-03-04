@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="externalfunction">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="11" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="9" end_col="6" name="TMyClass">
+        <TYPE  line_seq="0" line="6" col="14" type="class">
+          <STRICTPROTECTED  line_seq="0" line="7" col="10" visibility="true">
+            <METHOD  line_seq="0" begin_line="8" begin_col="5" end_line="9" end_col="3" kind="procedure" name="ProcessMsg">
+              <PARAMETERS  line_seq="0" line="8" col="25">
+                <PARAMETER  line_seq="0" line="8" col="30" kind="var">
+                  <NAME  line_seq="0" line="8" col="30" value="Msg"/>
+                  <TYPE  line_seq="0" line="8" col="35" name="TMessage"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <MESSAGE  line_seq="0" line="8" col="46">
+                <EXPRESSION  line_seq="0" line="8" col="54">
+                  <IDENTIFIER  line_seq="0" line="8" col="54" name="WM_USER"/>
+                </EXPRESSION>
+              </MESSAGE>
+            </METHOD>
+          </STRICTPROTECTED>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="11" begin_col="1" end_line="13" end_col="1"/>
+</UNIT>

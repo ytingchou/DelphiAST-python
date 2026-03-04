@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="experimentals">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="12" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="8" end_col="19" name="TExperimentalClass">
+        <TYPE  line_seq="0" line="6" col="24" type="class">
+          <FIELD  line_seq="0" line="7" col="5">
+            <NAME  line_seq="0" line="7" col="5" value="Field"/>
+            <TYPE  line_seq="0" line="7" col="12" name="Integer"/>
+          </FIELD>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+    <METHOD  line_seq="0" begin_line="10" begin_col="1" end_line="12" end_col="1" kind="procedure" name="someExperimentalProc">
+      <PARAMETERS  line_seq="0" line="10" col="31"/>
+    </METHOD>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="12" begin_col="1" end_line="18" end_col="1">
+    <METHOD  line_seq="0" begin_line="14" begin_col="1" end_line="18" end_col="1" name="someExperimentalProc" kind="procedure">
+      <PARAMETERS  line_seq="0" line="14" col="31"/>
+      <STATEMENTS  line_seq="0" begin_line="15" begin_col="1" end_line="16" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

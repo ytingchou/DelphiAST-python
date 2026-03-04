@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="finalizationinitializationexports">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="25" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="9" end_col="6" name="TFoo">
+        <TYPE  line_seq="0" line="6" col="10" type="class">
+          <TYPE  line_seq="0" line="6" col="16" name="TObject"/>
+          <METHOD  line_seq="0" begin_line="7" begin_col="5" end_line="8" end_col="5" kind="function" name="A">
+            <RETURNTYPE  line_seq="0" line="7" col="18">
+              <TYPE  line_seq="0" line="7" col="18" name="Integer"/>
+            </RETURNTYPE>
+          </METHOD>
+          <METHOD  line_seq="0" begin_line="8" begin_col="5" end_line="9" end_col="3" kind="constructor" name="Create"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="11" begin_col="3" end_line="13" end_col="6" name="TBar">
+        <TYPE  line_seq="0" line="11" col="10" type="record">
+          <METHOD  line_seq="0" begin_line="12" begin_col="5" end_line="13" end_col="3" kind="procedure" name="B"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="15" begin_col="3" end_line="18" end_col="6" name="IFooBar">
+        <TYPE  line_seq="0" line="15" col="13" type="interface">
+          <GUID  line_seq="0" line="16" col="5">
+            <LITERAL  line_seq="0" line="16" col="46" value="{BED74FE6-570B-40F8-ABF0-5E23C8EE8E7E}" type="string"/>
+          </GUID>
+          <METHOD  line_seq="0" begin_line="17" begin_col="5" end_line="18" end_col="3" kind="procedure" name="C"/>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+    <METHOD  line_seq="0" begin_line="20" begin_col="3" end_line="22" end_col="1" kind="procedure" name="Hello"/>
+    <CONSTANTS  line_seq="0" line="22" col="1">
+      <CONSTANT  line_seq="0" line="23" col="3">
+        <NAME  line_seq="0" line="23" col="3" value="A"/>
+        <VALUE  line_seq="0" line="23" col="7">
+          <EXPRESSION  line_seq="0" line="23" col="7">
+            <LITERAL  line_seq="0" line="23" col="7" value="1" type="numeric"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+    </CONSTANTS>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="25" begin_col="1" end_line="47" end_col="1">
+    <METHOD  line_seq="0" begin_line="27" begin_col="1" end_line="34" end_col="1" name="Hello" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="28" begin_col="1" end_line="30" end_col="4"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="34" begin_col="1" end_line="39" end_col="1" kind="function" name="TFoo.A">
+      <RETURNTYPE  line_seq="0" line="34" col="19">
+        <TYPE  line_seq="0" line="34" col="19" name="Integer"/>
+      </RETURNTYPE>
+      <STATEMENTS  line_seq="0" begin_line="35" begin_col="1" end_line="37" end_col="4"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="39" begin_col="1" end_line="44" end_col="1" name="TFoo.Create" kind="constructor">
+      <STATEMENTS  line_seq="0" begin_line="40" begin_col="1" end_line="42" end_col="4"/>
+    </METHOD>
+    <EXPORTS  line_seq="0" line="44" col="1">
+      <ELEMENT  line_seq="0" line="45" col="3" name="Hello"/>
+    </EXPORTS>
+  </IMPLEMENTATION>
+  <INITIALIZATION  line_seq="0" begin_line="47" begin_col="1" end_line="50" end_col="1">
+    <STATEMENTS  line_seq="0" begin_line="48" begin_col="3" end_line="50" end_col="1">
+      <CALL  line_seq="0" line="48" col="3">
+        <IDENTIFIER  line_seq="0" line="48" col="3" name="Hello"/>
+      </CALL>
+    </STATEMENTS>
+  </INITIALIZATION>
+  <FINALIZATION  line_seq="0" begin_line="50" begin_col="1" end_line="53" end_col="1">
+    <STATEMENTS  line_seq="0" begin_line="51" begin_col="3" end_line="53" end_col="1">
+      <CALL  line_seq="0" line="51" col="3">
+        <IDENTIFIER  line_seq="0" line="51" col="3" name="Hello"/>
+      </CALL>
+    </STATEMENTS>
+  </FINALIZATION>
+</UNIT>

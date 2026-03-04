@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="ternaryop">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="7" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="7" end_col="1" kind="procedure" name="Test"/>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="7" begin_col="1" end_line="17" end_col="1">
+    <METHOD  line_seq="0" begin_line="9" begin_col="1" end_line="17" end_col="1" name="Test" kind="procedure">
+      <VARIABLES  line_seq="0" line="10" col="1">
+        <VARIABLE  line_seq="0" line="11" col="3">
+          <NAME  line_seq="0" line="11" col="3" value="a"/>
+          <TYPE  line_seq="0" line="11" col="8" name="Integer"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="11" col="5">
+          <NAME  line_seq="0" line="11" col="5" value="b"/>
+          <TYPE  line_seq="0" line="11" col="8" name="Integer"/>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="12" begin_col="1" end_line="15" end_col="4">
+        <ASSIGN  line_seq="0" line="13" col="3">
+          <LHS  line_seq="0" line="13" col="3">
+            <IDENTIFIER  line_seq="0" line="13" col="3" name="a"/>
+          </LHS>
+          <RHS  line_seq="0" line="13" col="8">
+            <EXPRESSION  line_seq="0" line="13" col="8">
+              <TERNARYOP  line_seq="0" line="13" col="8">
+                <EXPRESSION  line_seq="0" line="13" col="11">
+                  <IDENTIFIER  line_seq="0" line="13" col="11" name="True"/>
+                </EXPRESSION>
+                <THEN  line_seq="0" line="13" col="16">
+                  <EXPRESSION  line_seq="0" line="13" col="21">
+                    <LITERAL  line_seq="0" line="13" col="21" value="1" type="numeric"/>
+                  </EXPRESSION>
+                </THEN>
+                <ELSE  line_seq="0" line="13" col="23">
+                  <EXPRESSION  line_seq="0" line="13" col="28">
+                    <LITERAL  line_seq="0" line="13" col="28" value="2" type="numeric"/>
+                  </EXPRESSION>
+                </ELSE>
+              </TERNARYOP>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="14" col="3">
+          <LHS  line_seq="0" line="14" col="3">
+            <IDENTIFIER  line_seq="0" line="14" col="3" name="b"/>
+          </LHS>
+          <RHS  line_seq="0" line="14" col="8">
+            <EXPRESSION  line_seq="0" line="14" col="8">
+              <TERNARYOP  line_seq="0" line="14" col="8">
+                <EXPRESSION  line_seq="0" line="14" col="11">
+                  <GREATER  line_seq="0" line="14" col="13">
+                    <IDENTIFIER  line_seq="0" line="14" col="11" name="a"/>
+                    <LITERAL  line_seq="0" line="14" col="15" value="2" type="numeric"/>
+                  </GREATER>
+                </EXPRESSION>
+                <THEN  line_seq="0" line="14" col="17">
+                  <EXPRESSION  line_seq="0" line="14" col="22">
+                    <LITERAL  line_seq="0" line="14" col="22" value="5" type="numeric"/>
+                  </EXPRESSION>
+                </THEN>
+                <ELSE  line_seq="0" line="14" col="24">
+                  <EXPRESSION  line_seq="0" line="14" col="29">
+                    <MUL  line_seq="0" line="14" col="31">
+                      <LITERAL  line_seq="0" line="14" col="29" value="6" type="numeric"/>
+                      <LITERAL  line_seq="0" line="14" col="33" value="18" type="numeric"/>
+                    </MUL>
+                  </EXPRESSION>
+                </ELSE>
+              </TERNARYOP>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

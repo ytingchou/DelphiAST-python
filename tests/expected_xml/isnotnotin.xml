@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="isnotnotin">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="7" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="7" end_col="1" kind="procedure" name="Test"/>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="7" begin_col="1" end_line="18" end_col="1">
+    <METHOD  line_seq="0" begin_line="9" begin_col="1" end_line="18" end_col="1" name="Test" kind="procedure">
+      <VARIABLES  line_seq="0" line="10" col="1">
+        <VARIABLE  line_seq="0" line="11" col="3">
+          <NAME  line_seq="0" line="11" col="3" value="a"/>
+          <TYPE  line_seq="0" line="11" col="6" type="array">
+            <BOUNDS  line_seq="0" line="11" col="12"/>
+            <TYPE  line_seq="0" line="11" col="15" name="Integer"/>
+          </TYPE>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="12" col="3">
+          <NAME  line_seq="0" line="12" col="3" value="b"/>
+          <TYPE  line_seq="0" line="12" col="6" name="TObject"/>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="13" begin_col="1" end_line="16" end_col="4">
+        <IF  line_seq="0" line="14" col="3">
+          <EXPRESSION  line_seq="0" line="14" col="6">
+            <NOTIN  line_seq="0" line="14" col="8">
+              <LITERAL  line_seq="0" line="14" col="6" value="1" type="numeric"/>
+              <ISNOT  line_seq="0" line="14" col="23">
+                <AND  line_seq="0" line="14" col="17">
+                  <IDENTIFIER  line_seq="0" line="14" col="15" name="a"/>
+                  <IDENTIFIER  line_seq="0" line="14" col="21" name="b"/>
+                </AND>
+                <IDENTIFIER  line_seq="0" line="14" col="30" name="TButton"/>
+              </ISNOT>
+            </NOTIN>
+          </EXPRESSION>
+          <THEN  line_seq="0" line="14" col="38">
+            <CALL  line_seq="0" line="15" col="5">
+              <IDENTIFIER  line_seq="0" line="15" col="5" name="Exit"/>
+            </CALL>
+          </THEN>
+        </IF>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

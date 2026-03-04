@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="pointerchars">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="28" end_col="1">
+    <METHOD  line_seq="0" begin_line="7" begin_col="1" end_line="28" end_col="1" name="FormKeyPress" kind="procedure">
+      <PARAMETERS  line_seq="0" line="7" col="23">
+        <PARAMETER  line_seq="0" line="7" col="24">
+          <NAME  line_seq="0" line="7" col="24" value="Sender"/>
+          <TYPE  line_seq="0" line="7" col="32" name="TObject"/>
+        </PARAMETER>
+        <PARAMETER  line_seq="0" line="7" col="45" kind="var">
+          <NAME  line_seq="0" line="7" col="45" value="Key"/>
+          <TYPE  line_seq="0" line="7" col="50" name="Char"/>
+        </PARAMETER>
+      </PARAMETERS>
+      <VARIABLES  line_seq="0" line="8" col="1">
+        <VARIABLE  line_seq="0" line="9" col="3">
+          <NAME  line_seq="0" line="9" col="3" value="P"/>
+          <TYPE  line_seq="0" line="9" col="6" name="PInteger"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="10" col="3">
+          <NAME  line_seq="0" line="10" col="3" value="Arr"/>
+          <TYPE  line_seq="0" line="10" col="8" type="array">
+            <BOUNDS  line_seq="0" line="10" col="14"/>
+            <TYPE  line_seq="0" line="10" col="17" name="Integer"/>
+          </TYPE>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="11" begin_col="1" end_line="26" end_col="4">
+        <IF  line_seq="0" line="12" col="4">
+          <EXPRESSION  line_seq="0" line="12" col="7">
+            <GREATER  line_seq="0" line="12" col="15">
+              <INDEXED  line_seq="0" line="12" col="10">
+                <EXPRESSION  line_seq="0" line="12" col="11">
+                  <DEREF  line_seq="0" line="12" col="12">
+                    <IDENTIFIER  line_seq="0" line="12" col="11" name="P"/>
+                  </DEREF>
+                </EXPRESSION>
+                <IDENTIFIER  line_seq="0" line="12" col="7" name="Arr"/>
+              </INDEXED>
+              <LITERAL  line_seq="0" line="12" col="17" value="0" type="numeric"/>
+            </GREATER>
+          </EXPRESSION>
+          <THEN  line_seq="0" line="12" col="19">
+            <STATEMENTS  line_seq="0" begin_line="13" begin_col="4" end_line="15" end_col="7"/>
+          </THEN>
+        </IF>
+        <IF  line_seq="0" line="17" col="4">
+          <EXPRESSION  line_seq="0" line="17" col="7">
+            <EQUAL  line_seq="0" line="17" col="11">
+              <IDENTIFIER  line_seq="0" line="17" col="7" name="Key"/>
+              <LITERAL  line_seq="0" line="17" col="16" value="^\" type="string"/>
+            </EQUAL>
+          </EXPRESSION>
+          <THEN  line_seq="0" line="17" col="16">
+            <STATEMENTS  line_seq="0" begin_line="18" begin_col="4" end_line="20" end_col="7"/>
+          </THEN>
+        </IF>
+        <IF  line_seq="0" line="22" col="4">
+          <EXPRESSION  line_seq="0" line="22" col="7">
+            <EQUAL  line_seq="0" line="22" col="11">
+              <IDENTIFIER  line_seq="0" line="22" col="7" name="Key"/>
+              <LITERAL  line_seq="0" line="22" col="16" value="^M" type="string"/>
+            </EQUAL>
+          </EXPRESSION>
+          <THEN  line_seq="0" line="22" col="16">
+            <STATEMENTS  line_seq="0" begin_line="23" begin_col="4" end_line="25" end_col="7"/>
+          </THEN>
+        </IF>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

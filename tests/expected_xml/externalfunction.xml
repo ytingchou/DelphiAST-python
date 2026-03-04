@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="externalfunction">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="7" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="7" end_col="1" kind="function" name="CreateJobObjectA">
+      <EXTERNAL  line_seq="0" line="5" col="28">
+        <IDENTIFIER  line_seq="0" line="5" col="37" name="Kernel32"/>
+        <LITERAL  line_seq="0" line="5" col="69" value="CreateJobObjectA" type="string"/>
+      </EXTERNAL>
+    </METHOD>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="7" begin_col="1" end_line="9" end_col="1"/>
+</UNIT>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="constset">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="20" end_col="1">
+    <METHOD  line_seq="0" begin_line="7" begin_col="1" end_line="20" end_col="1" name="Test" kind="procedure">
+      <VARIABLES  line_seq="0" line="8" col="1">
+        <VARIABLE  line_seq="0" line="9" col="3">
+          <NAME  line_seq="0" line="9" col="3" value="A"/>
+          <TYPE  line_seq="0" line="9" col="10" name="Integer"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="9" col="5">
+          <NAME  line_seq="0" line="9" col="5" value="B"/>
+          <TYPE  line_seq="0" line="9" col="10" name="Integer"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="9" col="7">
+          <NAME  line_seq="0" line="9" col="7" value="C"/>
+          <TYPE  line_seq="0" line="9" col="10" name="Integer"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="10" col="3">
+          <NAME  line_seq="0" line="10" col="3" value="D"/>
+          <TYPE  line_seq="0" line="10" col="6" name="Double"/>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="11" begin_col="1" end_line="18" end_col="4">
+        <ASSIGN  line_seq="0" line="12" col="3">
+          <LHS  line_seq="0" line="12" col="3">
+            <IDENTIFIER  line_seq="0" line="12" col="3" name="A"/>
+          </LHS>
+          <RHS  line_seq="0" line="12" col="8">
+            <EXPRESSION  line_seq="0" line="12" col="8">
+              <LITERAL  line_seq="0" line="12" col="8" value="123123_" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="13" col="3">
+          <LHS  line_seq="0" line="13" col="3">
+            <IDENTIFIER  line_seq="0" line="13" col="3" name="B"/>
+          </LHS>
+          <RHS  line_seq="0" line="13" col="8">
+            <EXPRESSION  line_seq="0" line="13" col="8">
+              <LITERAL  line_seq="0" line="13" col="8" value="$_1241_3_" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="14" col="3">
+          <LHS  line_seq="0" line="14" col="3">
+            <IDENTIFIER  line_seq="0" line="14" col="3" name="C"/>
+          </LHS>
+          <RHS  line_seq="0" line="14" col="8">
+            <EXPRESSION  line_seq="0" line="14" col="8">
+              <LITERAL  line_seq="0" line="14" col="8" value="%_01011" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="15" col="3">
+          <LHS  line_seq="0" line="15" col="3">
+            <IDENTIFIER  line_seq="0" line="15" col="3" name="D"/>
+          </LHS>
+          <RHS  line_seq="0" line="15" col="8">
+            <EXPRESSION  line_seq="0" line="15" col="8">
+              <LITERAL  line_seq="0" line="15" col="8" value="12_3_.12_3_" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="16" col="3">
+          <LHS  line_seq="0" line="16" col="3">
+            <IDENTIFIER  line_seq="0" line="16" col="3" name="A"/>
+          </LHS>
+          <RHS  line_seq="0" line="16" col="8">
+            <EXPRESSION  line_seq="0" line="16" col="8">
+              <LITERAL  line_seq="0" line="16" col="8" value="1____________23123_" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <ASSIGN  line_seq="0" line="17" col="3">
+          <LHS  line_seq="0" line="17" col="3">
+            <IDENTIFIER  line_seq="0" line="17" col="3" name="B"/>
+          </LHS>
+          <RHS  line_seq="0" line="17" col="8">
+            <EXPRESSION  line_seq="0" line="17" col="8">
+              <LITERAL  line_seq="0" line="17" col="8" value="$_12_________41_3_" type="numeric"/>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

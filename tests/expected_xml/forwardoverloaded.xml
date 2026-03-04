@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="forwardoverloaded">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="19" end_col="1">
+    <METHOD  line_seq="0" begin_line="7" begin_col="1" end_line="9" end_col="1" name="Test" kind="procedure" overload="true"/>
+    <METHOD  line_seq="0" begin_line="9" begin_col="1" end_line="14" end_col="1" name="Test" kind="procedure" overload="true">
+      <PARAMETERS  line_seq="0" line="9" col="15">
+        <PARAMETER  line_seq="0" line="9" col="16">
+          <NAME  line_seq="0" line="9" col="16" value="AParam"/>
+          <TYPE  line_seq="0" line="9" col="24" name="Integer"/>
+        </PARAMETER>
+      </PARAMETERS>
+      <STATEMENTS  line_seq="0" begin_line="10" begin_col="1" end_line="12" end_col="4"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="14" begin_col="1" end_line="19" end_col="1" name="Test" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="15" begin_col="1" end_line="17" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

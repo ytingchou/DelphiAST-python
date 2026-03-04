@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="endtoken">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="7" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="7" end_col="1" kind="function" name="BitsHighest">
+      <PARAMETERS  line_seq="0" line="5" col="21">
+        <PARAMETER  line_seq="0" line="5" col="22">
+          <NAME  line_seq="0" line="5" col="22" value="X"/>
+          <TYPE  line_seq="0" line="5" col="25" name="Cardinal"/>
+        </PARAMETER>
+      </PARAMETERS>
+      <RETURNTYPE  line_seq="0" line="5" col="36">
+        <TYPE  line_seq="0" line="5" col="36" name="Integer"/>
+      </RETURNTYPE>
+    </METHOD>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="7" begin_col="1" end_line="32" end_col="1">
+    <METHOD  line_seq="0" begin_line="10" begin_col="1" end_line="32" end_col="1" kind="function" name="BitsHighest">
+      <PARAMETERS  line_seq="0" line="10" col="21">
+        <PARAMETER  line_seq="0" line="10" col="22">
+          <NAME  line_seq="0" line="10" col="22" value="X"/>
+          <TYPE  line_seq="0" line="10" col="25" name="Cardinal"/>
+        </PARAMETER>
+      </PARAMETERS>
+      <RETURNTYPE  line_seq="0" line="10" col="36">
+        <TYPE  line_seq="0" line="10" col="36" name="Integer"/>
+      </RETURNTYPE>
+      <STATEMENTS  line_seq="0" begin_line="11" begin_col="1" end_line="30" end_col="4" type="asm"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

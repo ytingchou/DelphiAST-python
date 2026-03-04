@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="dottedtypes">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="16" end_col="1">
+    <USES  line_seq="0" begin_line="5" begin_col="1" end_line="8" end_col="1">
+      <UNIT  line_seq="0" line="6" col="3" name="MyUnit"/>
+    </USES>
+    <TYPESECTION  line_seq="0" line="8" col="1">
+      <TYPEDECL  line_seq="0" begin_line="9" begin_col="3" end_line="14" end_col="6" name="TSample">
+        <TYPEPARAMS  line_seq="0" line="9" col="10">
+          <TYPEPARAM  line_seq="0" line="9" col="11">
+            <TYPE  line_seq="0" line="9" col="11" name="T"/>
+            <CONSTRAINTS  line_seq="0" line="9" col="14">
+              <TYPE  line_seq="0" line="9" col="14" name="MyUnit.TItem"/>
+              <TYPE  line_seq="0" line="9" col="28" name="MyUnit.MyType.IStuff"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="9" col="52" type="class">
+          <TYPE  line_seq="0" line="9" col="58" name="MyUnit.TBaseClass"/>
+          <TYPE  line_seq="0" line="9" col="77" name="MyUnit.IStuff"/>
+          <PUBLIC  line_seq="0" line="10" col="3" visibility="true">
+            <METHOD  line_seq="0" begin_line="11" begin_col="5" end_line="13" end_col="5" kind="function" name="DoStuff&lt;T2&gt;">
+              <PARAMETERS  line_seq="0" line="11" col="43">
+                <PARAMETER  line_seq="0" line="11" col="44">
+                  <NAME  line_seq="0" line="11" col="44" value="Obj"/>
+                  <TYPE  line_seq="0" line="11" col="49" name="MyUnit.TMyObject"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <RETURNTYPE  line_seq="0" line="11" col="68">
+                <TYPE  line_seq="0" line="11" col="68" name="MyUnit.TMyObject"/>
+              </RETURNTYPE>
+            </METHOD>
+            <PROPERTY  line_seq="0" line="13" col="5" name="Obj">
+              <TYPE  line_seq="0" line="13" col="20" name="TObj"/>
+              <READ  line_seq="0" line="13" col="25">
+                <IDENTIFIER  line_seq="0" line="13" col="30" name="FObj"/>
+              </READ>
+              <IMPLEMENTS  line_seq="0" line="13" col="35">
+                <TYPE  line_seq="0" line="13" col="46" name="MyUnit.IStuff"/>
+              </IMPLEMENTS>
+            </PROPERTY>
+          </PUBLIC>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="16" begin_col="1" end_line="37" end_col="1">
+    <METHOD  line_seq="0" begin_line="18" begin_col="1" end_line="37" end_col="1" kind="function" name="TSample&lt;T&gt;.DoStuff&lt;T2&gt;">
+      <PARAMETERS  line_seq="0" line="18" col="32">
+        <PARAMETER  line_seq="0" line="18" col="33">
+          <NAME  line_seq="0" line="18" col="33" value="Obj"/>
+          <TYPE  line_seq="0" line="18" col="38" name="MyUnit.TMyObject"/>
+        </PARAMETER>
+      </PARAMETERS>
+      <RETURNTYPE  line_seq="0" line="18" col="57">
+        <TYPE  line_seq="0" line="18" col="57" name="MyUnit.TMyObject"/>
+      </RETURNTYPE>
+      <VARIABLES  line_seq="0" line="19" col="1">
+        <VARIABLE  line_seq="0" line="20" col="3">
+          <NAME  line_seq="0" line="20" col="3" value="Obj2"/>
+          <TYPE  line_seq="0" line="20" col="9" name="MyUnit.TMyObject"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="21" col="3">
+          <NAME  line_seq="0" line="21" col="3" value="Obj3"/>
+          <TYPE  line_seq="0" line="21" col="15" name="MyUnit.TMyAdditionalObject"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="21" col="9">
+          <NAME  line_seq="0" line="21" col="9" value="Obj4"/>
+          <TYPE  line_seq="0" line="21" col="15" name="MyUnit.TMyAdditionalObject"/>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="22" col="3">
+          <NAME  line_seq="0" line="22" col="3" value="Sample"/>
+          <TYPE  line_seq="0" line="22" col="11" name="TSample">
+            <TYPEARGS  line_seq="0" line="22" col="19">
+              <TYPE  line_seq="0" line="22" col="19" name="MyUnit.TSpecialItem"/>
+            </TYPEARGS>
+          </TYPE>
+        </VARIABLE>
+        <VARIABLE  line_seq="0" line="23" col="3">
+          <NAME  line_seq="0" line="23" col="3" value="MyObjectArray"/>
+          <TYPE  line_seq="0" line="23" col="18" type="array">
+            <BOUNDS  line_seq="0" line="23" col="24"/>
+            <TYPE  line_seq="0" line="23" col="27" name="MyUnit.TMyObject"/>
+          </TYPE>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="24" begin_col="1" end_line="35" end_col="4">
+        <ASSIGN  line_seq="0" line="25" col="3">
+          <LHS  line_seq="0" line="25" col="3">
+            <IDENTIFIER  line_seq="0" line="25" col="3" name="Sample"/>
+          </LHS>
+          <RHS  line_seq="0" line="25" col="13">
+            <EXPRESSION  line_seq="0" line="25" col="13">
+              <DOT  line_seq="0" line="25" col="41">
+                <GENERIC  line_seq="0" line="25" col="13">
+                  <IDENTIFIER  line_seq="0" line="25" col="13" name="TSample"/>
+                  <TYPEARGS  line_seq="0" line="25" col="21">
+                    <TYPE  line_seq="0" line="25" col="21" name="MyUnit.TSpecialItem"/>
+                  </TYPEARGS>
+                </GENERIC>
+                <IDENTIFIER  line_seq="0" line="25" col="42" name="Create"/>
+              </DOT>
+            </EXPRESSION>
+          </RHS>
+        </ASSIGN>
+        <TRY  line_seq="0" line="27" col="3">
+          <STATEMENTS  line_seq="0" begin_line="28" begin_col="5" end_line="29" end_col="3">
+            <CALL  line_seq="0" line="28" col="5">
+              <CALL  line_seq="0" line="28" col="5">
+                <DOT  line_seq="0" line="28" col="11">
+                  <IDENTIFIER  line_seq="0" line="28" col="5" name="Sample"/>
+                  <GENERIC  line_seq="0" line="28" col="5">
+                    <IDENTIFIER  line_seq="0" line="28" col="12" name="DoOtherStuff"/>
+                    <TYPEARGS  line_seq="0" line="28" col="25">
+                      <TYPE  line_seq="0" line="28" col="25" name="MyUnit.TSpecialObject"/>
+                      <TYPE  line_seq="0" line="28" col="48" name="MyUnit.TObject"/>
+                    </TYPEARGS>
+                  </GENERIC>
+                </DOT>
+                <EXPRESSIONS  line_seq="0" line="28" col="64">
+                  <EXPRESSION  line_seq="0" line="28" col="64">
+                    <IDENTIFIER  line_seq="0" line="28" col="64" name="Obj2"/>
+                  </EXPRESSION>
+                </EXPRESSIONS>
+              </CALL>
+            </CALL>
+          </STATEMENTS>
+          <EXCEPT  line_seq="0" line="30" col="5">
+            <EXCEPTIONHANDLER  line_seq="0" line="30" col="5">
+              <VARIABLE  line_seq="0" line="30" col="8">
+                <NAME  line_seq="0" line="30" col="8" value="E"/>
+                <TYPE  line_seq="0" line="30" col="11" name="MyUnit.MyException"/>
+              </VARIABLE>
+              <STATEMENTS  line_seq="0" begin_line="31" begin_col="5" end_line="33" end_col="8">
+                <CALL  line_seq="0" line="32" col="7">
+                  <CALL  line_seq="0" line="32" col="7">
+                    <IDENTIFIER  line_seq="0" line="32" col="7" name="WriteLn"/>
+                    <EXPRESSIONS  line_seq="0" line="32" col="15">
+                      <EXPRESSION  line_seq="0" line="32" col="15">
+                        <DOT  line_seq="0" line="32" col="16">
+                          <IDENTIFIER  line_seq="0" line="32" col="15" name="E"/>
+                          <IDENTIFIER  line_seq="0" line="32" col="17" name="Message"/>
+                        </DOT>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+          </EXCEPT>
+        </TRY>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

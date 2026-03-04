@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="properties">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="22" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="20" end_col="6" name="TProps">
+        <TYPE  line_seq="0" line="6" col="12" type="class">
+          <PUBLIC  line_seq="0" line="7" col="3" visibility="true">
+            <PROPERTY  line_seq="0" line="8" col="2" name="Name">
+              <TYPE  line_seq="0" line="8" col="17" name="string"/>
+              <READ  line_seq="0" line="8" col="24">
+                <IDENTIFIER  line_seq="0" line="8" col="29" name="FName"/>
+              </READ>
+              <WRITE  line_seq="0" line="8" col="35">
+                <IDENTIFIER  line_seq="0" line="8" col="41" name="FName"/>
+              </WRITE>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="9" col="2" name="ReadableName">
+              <TYPE  line_seq="0" line="9" col="25" name="string"/>
+              <READ  line_seq="0" line="9" col="32">
+                <IDENTIFIER  line_seq="0" line="9" col="37" name="FName"/>
+              </READ>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="10" col="2" name="WriteableName">
+              <TYPE  line_seq="0" line="10" col="26" name="string"/>
+              <WRITE  line_seq="0" line="10" col="33">
+                <IDENTIFIER  line_seq="0" line="10" col="39" name="FName"/>
+              </WRITE>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="11" col="2" name="Redeclared"/>
+            <PROPERTY  line_seq="0" line="12" col="2" name="Width">
+              <TYPE  line_seq="0" line="12" col="18" name="TWidth"/>
+              <READ  line_seq="0" line="12" col="25">
+                <IDENTIFIER  line_seq="0" line="12" col="30" name="GetWidth"/>
+              </READ>
+              <WRITE  line_seq="0" line="12" col="39">
+                <IDENTIFIER  line_seq="0" line="12" col="45" name="SetWidth"/>
+              </WRITE>
+              <DEFAULT  line_seq="0" line="12" col="75">
+                <EXPRESSION  line_seq="0" line="12" col="83">
+                  <LITERAL  line_seq="0" line="12" col="83" value="50" type="numeric"/>
+                </EXPRESSION>
+              </DEFAULT>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="13" col="2" name="Tag">
+              <TYPE  line_seq="0" line="13" col="16" name="Integer"/>
+              <READ  line_seq="0" line="13" col="24">
+                <IDENTIFIER  line_seq="0" line="13" col="29" name="FTag"/>
+              </READ>
+              <WRITE  line_seq="0" line="13" col="34">
+                <IDENTIFIER  line_seq="0" line="13" col="40" name="FTag"/>
+              </WRITE>
+              <DEFAULT  line_seq="0" line="13" col="45">
+                <EXPRESSION  line_seq="0" line="13" col="53">
+                  <LITERAL  line_seq="0" line="13" col="53" value="0" type="numeric"/>
+                </EXPRESSION>
+              </DEFAULT>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="14" col="2" name="Indexed">
+              <PARAMETERS  line_seq="0" line="14" col="18">
+                <PARAMETER  line_seq="0" line="14" col="19">
+                  <NAME  line_seq="0" line="14" col="19" value="Index"/>
+                  <TYPE  line_seq="0" line="14" col="26" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="14" col="36" name="string"/>
+              <READ  line_seq="0" line="14" col="43">
+                <IDENTIFIER  line_seq="0" line="14" col="48" name="GetByIndex"/>
+              </READ>
+              <WRITE  line_seq="0" line="14" col="59">
+                <IDENTIFIER  line_seq="0" line="14" col="65" name="SetByIndexed"/>
+              </WRITE>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="15" col="2" name="ReadableIndexed">
+              <PARAMETERS  line_seq="0" line="15" col="26">
+                <PARAMETER  line_seq="0" line="15" col="27">
+                  <NAME  line_seq="0" line="15" col="27" value="Index"/>
+                  <TYPE  line_seq="0" line="15" col="34" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="15" col="44" name="string"/>
+              <READ  line_seq="0" line="15" col="51">
+                <IDENTIFIER  line_seq="0" line="15" col="56" name="GetByIndex"/>
+              </READ>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="16" col="2" name="WriteableIndexed">
+              <PARAMETERS  line_seq="0" line="16" col="27">
+                <PARAMETER  line_seq="0" line="16" col="28">
+                  <NAME  line_seq="0" line="16" col="28" value="Index"/>
+                  <TYPE  line_seq="0" line="16" col="35" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="16" col="45" name="string"/>
+              <WRITE  line_seq="0" line="16" col="52">
+                <IDENTIFIER  line_seq="0" line="16" col="58" name="SetByIndexed"/>
+              </WRITE>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="17" col="2" name="DefaultIndexed">
+              <PARAMETERS  line_seq="0" line="17" col="25">
+                <PARAMETER  line_seq="0" line="17" col="26">
+                  <NAME  line_seq="0" line="17" col="26" value="Index"/>
+                  <TYPE  line_seq="0" line="17" col="33" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="17" col="43" name="string"/>
+              <READ  line_seq="0" line="17" col="50">
+                <IDENTIFIER  line_seq="0" line="17" col="55" name="GetByIndex"/>
+              </READ>
+              <WRITE  line_seq="0" line="17" col="66">
+                <IDENTIFIER  line_seq="0" line="17" col="72" name="SetByIndexed"/>
+              </WRITE>
+              <DEFAULT  line_seq="0" line="17" col="86"/>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="18" col="2" name="DefaultReadableIndexed">
+              <PARAMETERS  line_seq="0" line="18" col="33">
+                <PARAMETER  line_seq="0" line="18" col="34">
+                  <NAME  line_seq="0" line="18" col="34" value="Index"/>
+                  <TYPE  line_seq="0" line="18" col="41" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="18" col="51" name="string"/>
+              <READ  line_seq="0" line="18" col="58">
+                <IDENTIFIER  line_seq="0" line="18" col="63" name="GetByIndex"/>
+              </READ>
+              <DEFAULT  line_seq="0" line="18" col="75"/>
+            </PROPERTY>
+            <PROPERTY  line_seq="0" line="19" col="2" name="DefaultWriteableIndexed">
+              <PARAMETERS  line_seq="0" line="19" col="34">
+                <PARAMETER  line_seq="0" line="19" col="35">
+                  <NAME  line_seq="0" line="19" col="35" value="Index"/>
+                  <TYPE  line_seq="0" line="19" col="42" name="integer"/>
+                </PARAMETER>
+              </PARAMETERS>
+              <TYPE  line_seq="0" line="19" col="52" name="string"/>
+              <WRITE  line_seq="0" line="19" col="59">
+                <IDENTIFIER  line_seq="0" line="19" col="65" name="SetByIndexed"/>
+              </WRITE>
+              <DEFAULT  line_seq="0" line="19" col="79"/>
+            </PROPERTY>
+          </PUBLIC>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="22" begin_col="1" end_line="24" end_col="1"/>
+</UNIT>

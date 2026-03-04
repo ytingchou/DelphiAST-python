@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="tryexcept">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="54" end_col="1">
+    <METHOD  line_seq="0" begin_line="7" begin_col="1" end_line="54" end_col="1" name="DoStuff" kind="procedure">
+      <VARIABLES  line_seq="0" line="8" col="1">
+        <VARIABLE  line_seq="0" line="9" col="3">
+          <NAME  line_seq="0" line="9" col="3" value="O"/>
+          <TYPE  line_seq="0" line="9" col="6" name="MyUnit.TMyObject"/>
+        </VARIABLE>
+      </VARIABLES>
+      <STATEMENTS  line_seq="0" begin_line="10" begin_col="1" end_line="52" end_col="4">
+        <TRY  line_seq="0" line="11" col="3">
+          <STATEMENTS  line_seq="0" begin_line="12" begin_col="4" end_line="13" end_col="3">
+            <CALL  line_seq="0" line="12" col="4">
+              <IDENTIFIER  line_seq="0" line="12" col="4" name="DoSomething"/>
+            </CALL>
+          </STATEMENTS>
+          <EXCEPT  line_seq="0" line="14" col="5">
+            <STATEMENTS  line_seq="0" begin_line="14" begin_col="5" end_line="15" end_col="3">
+              <CALL  line_seq="0" line="14" col="5">
+                <CALL  line_seq="0" line="14" col="5">
+                  <IDENTIFIER  line_seq="0" line="14" col="5" name="Log"/>
+                  <EXPRESSIONS  line_seq="0" line="14" col="9">
+                    <EXPRESSION  line_seq="0" line="14" col="9">
+                      <LITERAL  line_seq="0" line="14" col="29" value="DoSomething failed" type="string"/>
+                    </EXPRESSION>
+                  </EXPRESSIONS>
+                </CALL>
+              </CALL>
+            </STATEMENTS>
+          </EXCEPT>
+        </TRY>
+        <TRY  line_seq="0" line="17" col="3">
+          <STATEMENTS  line_seq="0" begin_line="18" begin_col="5" end_line="19" end_col="3">
+            <EXPRESSION  line_seq="0" line="18" col="5">
+              <IDENTIFIER  line_seq="0" line="18" col="5" name="DoSomethingElse"/>
+            </EXPRESSION>
+          </STATEMENTS>
+          <EXCEPT  line_seq="0" line="20" col="5">
+            <EXCEPTIONHANDLER  line_seq="0" line="20" col="5">
+              <VARIABLE  line_seq="0" line="20" col="8">
+                <NAME  line_seq="0" line="20" col="8" value="E"/>
+                <TYPE  line_seq="0" line="20" col="11" name="Exception"/>
+              </VARIABLE>
+              <STATEMENTS  line_seq="0" begin_line="21" begin_col="5" end_line="23" end_col="8">
+                <CALL  line_seq="0" line="22" col="7">
+                  <CALL  line_seq="0" line="22" col="7">
+                    <IDENTIFIER  line_seq="0" line="22" col="7" name="LogError"/>
+                    <EXPRESSIONS  line_seq="0" line="22" col="16">
+                      <EXPRESSION  line_seq="0" line="22" col="16">
+                        <IDENTIFIER  line_seq="0" line="22" col="16" name="E"/>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+          </EXCEPT>
+        </TRY>
+        <TRY  line_seq="0" line="26" col="3">
+          <STATEMENTS  line_seq="0" begin_line="27" begin_col="5" end_line="28" end_col="3">
+            <CALL  line_seq="0" line="27" col="5">
+              <IDENTIFIER  line_seq="0" line="27" col="5" name="DoCrazyStuff"/>
+            </CALL>
+          </STATEMENTS>
+          <EXCEPT  line_seq="0" line="30" col="5">
+            <EXCEPTIONHANDLER  line_seq="0" line="30" col="5">
+              <TYPE  line_seq="0" line="30" col="8" name="EFileNotFound"/>
+              <STATEMENTS  line_seq="0" begin_line="31" begin_col="5" end_line="33" end_col="8">
+                <CALL  line_seq="0" line="32" col="7">
+                  <CALL  line_seq="0" line="32" col="7">
+                    <IDENTIFIER  line_seq="0" line="32" col="7" name="LogHint"/>
+                    <EXPRESSIONS  line_seq="0" line="32" col="15">
+                      <EXPRESSION  line_seq="0" line="32" col="15">
+                        <LITERAL  line_seq="0" line="32" col="49" value="File not found. Does&apos;nt matter." type="string"/>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+            <EXCEPTIONHANDLER  line_seq="0" line="35" col="5">
+              <TYPE  line_seq="0" line="35" col="8" name="MyUnit.EFileNotFound"/>
+              <STATEMENTS  line_seq="0" begin_line="36" begin_col="5" end_line="38" end_col="8">
+                <CALL  line_seq="0" line="37" col="7">
+                  <CALL  line_seq="0" line="37" col="7">
+                    <IDENTIFIER  line_seq="0" line="37" col="7" name="LogHint"/>
+                    <EXPRESSIONS  line_seq="0" line="37" col="15">
+                      <EXPRESSION  line_seq="0" line="37" col="15">
+                        <LITERAL  line_seq="0" line="37" col="56" value="MyUnit file not found. Does&apos;nt matter." type="string"/>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+            <EXCEPTIONHANDLER  line_seq="0" line="40" col="5">
+              <VARIABLE  line_seq="0" line="40" col="8">
+                <NAME  line_seq="0" line="40" col="8" value="E"/>
+                <TYPE  line_seq="0" line="40" col="11" name="MyUnit.ECriticalError"/>
+              </VARIABLE>
+              <STATEMENTS  line_seq="0" begin_line="41" begin_col="5" end_line="43" end_col="8">
+                <CALL  line_seq="0" line="42" col="7">
+                  <CALL  line_seq="0" line="42" col="7">
+                    <IDENTIFIER  line_seq="0" line="42" col="7" name="LogError"/>
+                    <EXPRESSIONS  line_seq="0" line="42" col="16">
+                      <EXPRESSION  line_seq="0" line="42" col="16">
+                        <ADD  line_seq="0" line="42" col="42">
+                          <LITERAL  line_seq="0" line="42" col="42" value="MyUnit Critical error: " type="string"/>
+                          <DOT  line_seq="0" line="42" col="45">
+                            <IDENTIFIER  line_seq="0" line="42" col="44" name="E"/>
+                            <IDENTIFIER  line_seq="0" line="42" col="46" name="Message"/>
+                          </DOT>
+                        </ADD>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+            <EXCEPTIONHANDLER  line_seq="0" line="45" col="5">
+              <VARIABLE  line_seq="0" line="45" col="8">
+                <NAME  line_seq="0" line="45" col="8" value="E"/>
+                <TYPE  line_seq="0" line="45" col="11" name="Exception"/>
+              </VARIABLE>
+              <STATEMENTS  line_seq="0" begin_line="46" begin_col="5" end_line="49" end_col="5">
+                <CALL  line_seq="0" line="47" col="7">
+                  <CALL  line_seq="0" line="47" col="7">
+                    <IDENTIFIER  line_seq="0" line="47" col="7" name="LogError"/>
+                    <EXPRESSIONS  line_seq="0" line="47" col="16">
+                      <EXPRESSION  line_seq="0" line="47" col="16">
+                        <IDENTIFIER  line_seq="0" line="47" col="16" name="E"/>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </EXCEPTIONHANDLER>
+            <ELSE  line_seq="0" line="49" col="5">
+              <STATEMENTS  line_seq="0" begin_line="50" begin_col="7" end_line="51" end_col="3">
+                <CALL  line_seq="0" line="50" col="7">
+                  <CALL  line_seq="0" line="50" col="7">
+                    <IDENTIFIER  line_seq="0" line="50" col="7" name="LogError"/>
+                    <EXPRESSIONS  line_seq="0" line="50" col="16">
+                      <EXPRESSION  line_seq="0" line="50" col="16">
+                        <LITERAL  line_seq="0" line="50" col="31" value="Unknown error" type="string"/>
+                      </EXPRESSION>
+                    </EXPRESSIONS>
+                  </CALL>
+                </CALL>
+              </STATEMENTS>
+            </ELSE>
+          </EXCEPT>
+        </TRY>
+      </STATEMENTS>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

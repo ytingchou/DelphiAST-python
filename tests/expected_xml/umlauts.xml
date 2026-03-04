@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="umlauts">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="7" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="7" end_col="1" kind="procedure" name="�bernehmeMindestAbbremsungen"/>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="7" begin_col="1" end_line="14" end_col="1">
+    <METHOD  line_seq="0" begin_line="9" begin_col="1" end_line="14" end_col="1" name="�bernehmeMindestAbbremsungen" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="10" begin_col="1" end_line="12" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

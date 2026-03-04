@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="implementsgenerictype">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="16" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="7" end_col="6" name="IFoo">
+        <TYPEPARAMS  line_seq="0" line="6" col="7">
+          <TYPEPARAM  line_seq="0" line="6" col="8">
+            <TYPE  line_seq="0" line="6" col="8" name="T"/>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="6" col="13" type="interface"/>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="9" begin_col="3" end_line="14" end_col="6" name="TBar">
+        <TYPE  line_seq="0" line="9" col="10" type="class">
+          <TYPE  line_seq="0" line="9" col="16" name="TInterfacedObject"/>
+          <TYPE  line_seq="0" line="9" col="35" name="IFoo">
+            <TYPEARGS  line_seq="0" line="9" col="40">
+              <TYPE  line_seq="0" line="9" col="40" name="IInterface"/>
+            </TYPEARGS>
+          </TYPE>
+          <PRIVATE  line_seq="0" line="10" col="3" visibility="true">
+            <FIELD  line_seq="0" line="11" col="5">
+              <NAME  line_seq="0" line="11" col="5" value="FFoo"/>
+              <TYPE  line_seq="0" line="11" col="12" name="IFoo">
+                <TYPEARGS  line_seq="0" line="11" col="17">
+                  <TYPE  line_seq="0" line="11" col="17" name="IInterface"/>
+                </TYPEARGS>
+              </TYPE>
+            </FIELD>
+          </PRIVATE>
+          <PUBLIC  line_seq="0" line="12" col="3" visibility="true">
+            <PROPERTY  line_seq="0" line="13" col="5" name="Foo">
+              <TYPE  line_seq="0" line="13" col="20" name="IFoo">
+                <TYPEARGS  line_seq="0" line="13" col="25">
+                  <TYPE  line_seq="0" line="13" col="25" name="IInterface"/>
+                </TYPEARGS>
+              </TYPE>
+              <READ  line_seq="0" line="13" col="37">
+                <IDENTIFIER  line_seq="0" line="13" col="42" name="FFoo"/>
+              </READ>
+              <IMPLEMENTS  line_seq="0" line="13" col="47">
+                <TYPE  line_seq="0" line="13" col="58" name="IFoo">
+                  <TYPEARGS  line_seq="0" line="13" col="63">
+                    <TYPE  line_seq="0" line="13" col="63" name="IInterface"/>
+                  </TYPEARGS>
+                </TYPE>
+              </IMPLEMENTS>
+            </PROPERTY>
+          </PUBLIC>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="16" begin_col="1" end_line="18" end_col="1"/>
+</UNIT>

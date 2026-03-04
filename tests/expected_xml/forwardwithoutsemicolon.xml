@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="forwardwithoutsemicolon">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="8" end_col="1">
+    <METHOD  line_seq="0" begin_line="5" begin_col="1" end_line="6" end_col="1" kind="procedure" name="proc1">
+      <PARAMETERS  line_seq="0" line="5" col="16"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="6" begin_col="1" end_line="8" end_col="1" kind="procedure" name="proc2">
+      <PARAMETERS  line_seq="0" line="6" col="16"/>
+    </METHOD>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="8" begin_col="1" end_line="20" end_col="1">
+    <METHOD  line_seq="0" begin_line="10" begin_col="1" end_line="15" end_col="1" name="proc1" kind="procedure">
+      <PARAMETERS  line_seq="0" line="10" col="16"/>
+      <STATEMENTS  line_seq="0" begin_line="11" begin_col="1" end_line="13" end_col="4"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="15" begin_col="1" end_line="20" end_col="1" name="proc2" kind="procedure">
+      <PARAMETERS  line_seq="0" line="15" col="16"/>
+      <STATEMENTS  line_seq="0" begin_line="16" begin_col="1" end_line="18" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

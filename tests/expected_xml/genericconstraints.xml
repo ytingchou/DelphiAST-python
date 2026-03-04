@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="genericconstraints">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="17" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="6" end_col="39" name="TFoo">
+        <TYPEPARAMS  line_seq="0" line="6" col="7">
+          <TYPEPARAM  line_seq="0" line="6" col="8">
+            <TYPE  line_seq="0" line="6" col="8" name="T"/>
+            <CONSTRAINTS  line_seq="0" line="6" col="11">
+              <TYPE  line_seq="0" line="6" col="11" name="TComponent"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="6" col="25" type="class">
+          <TYPE  line_seq="0" line="6" col="31" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="7" begin_col="3" end_line="7" end_col="42" name="TFoo">
+        <TYPEPARAMS  line_seq="0" line="7" col="7">
+          <TYPEPARAM  line_seq="0" line="7" col="8">
+            <TYPE  line_seq="0" line="7" col="8" name="TComma1"/>
+          </TYPEPARAM>
+          <TYPEPARAM  line_seq="0" line="7" col="24">
+            <TYPE  line_seq="0" line="7" col="17" name="TComma2"/>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="7" col="28" type="class">
+          <TYPE  line_seq="0" line="7" col="34" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="8" begin_col="3" end_line="8" end_col="63" name="TBar">
+        <TYPEPARAMS  line_seq="0" line="8" col="7">
+          <TYPEPARAM  line_seq="0" line="8" col="8">
+            <TYPE  line_seq="0" line="8" col="8" name="TTwoConstraints"/>
+            <CONSTRAINTS  line_seq="0" line="8" col="25">
+              <TYPE  line_seq="0" line="8" col="25" name="TComponent"/>
+              <TYPE  line_seq="0" line="8" col="37" name="IUnknown"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="8" col="49" type="class">
+          <TYPE  line_seq="0" line="8" col="55" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="9" begin_col="3" end_line="9" end_col="54" name="TBar">
+        <TYPEPARAMS  line_seq="0" line="9" col="7">
+          <TYPEPARAM  line_seq="0" line="9" col="8">
+            <TYPE  line_seq="0" line="9" col="8" name="T1"/>
+            <CONSTRAINTS  line_seq="0" line="9" col="12">
+              <TYPE  line_seq="0" line="9" col="12" name="TComponent"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+          <TYPEPARAM  line_seq="0" line="9" col="24">
+            <TYPE  line_seq="0" line="9" col="24" name="T2"/>
+            <CONSTRAINTS  line_seq="0" line="9" col="28">
+              <TYPE  line_seq="0" line="9" col="28" name="IUnknown"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="9" col="40" type="class">
+          <TYPE  line_seq="0" line="9" col="46" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="10" begin_col="3" end_line="10" end_col="78" name="TBaz">
+        <TYPEPARAMS  line_seq="0" line="10" col="7">
+          <TYPEPARAM  line_seq="0" line="10" col="8">
+            <TYPE  line_seq="0" line="10" col="8" name="TThreeConstraints"/>
+            <CONSTRAINTS  line_seq="0" line="10" col="27">
+              <TYPE  line_seq="0" line="10" col="27" name="TComponent"/>
+              <TYPE  line_seq="0" line="10" col="39" name="IUnknown"/>
+              <CONSTRUCTORCONSTRAINT  line_seq="0" line="10" col="49"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="10" col="64" type="class">
+          <TYPE  line_seq="0" line="10" col="70" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="11" begin_col="3" end_line="11" end_col="49" name="TBaz">
+        <TYPEPARAMS  line_seq="0" line="11" col="7">
+          <TYPEPARAM  line_seq="0" line="11" col="8">
+            <TYPE  line_seq="0" line="11" col="8" name="TComma1"/>
+            <CONSTRAINTS  line_seq="0" line="11" col="26">
+              <CLASSCONSTRAINT  line_seq="0" line="11" col="26"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+          <TYPEPARAM  line_seq="0" line="11" col="31">
+            <TYPE  line_seq="0" line="11" col="17" name="TComma2"/>
+            <CONSTRAINTS  line_seq="0" line="11" col="26">
+              <CLASSCONSTRAINT  line_seq="0" line="11" col="26"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="11" col="35" type="class">
+          <TYPE  line_seq="0" line="11" col="41" name="TObject"/>
+        </TYPE>
+      </TYPEDECL>
+      <TYPEDECL  line_seq="0" begin_line="12" begin_col="3" end_line="15" end_col="6" name="TBax">
+        <TYPEPARAMS  line_seq="0" line="12" col="7">
+          <TYPEPARAM  line_seq="0" line="12" col="8">
+            <TYPE  line_seq="0" line="12" col="8" name="T1"/>
+            <CONSTRAINTS  line_seq="0" line="12" col="12">
+              <CLASSCONSTRAINT  line_seq="0" line="12" col="12"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+          <TYPEPARAM  line_seq="0" line="12" col="19">
+            <TYPE  line_seq="0" line="12" col="19" name="T2"/>
+            <CONSTRAINTS  line_seq="0" line="12" col="23">
+              <RECORDCONSTRAINT  line_seq="0" line="12" col="23"/>
+            </CONSTRAINTS>
+          </TYPEPARAM>
+        </TYPEPARAMS>
+        <TYPE  line_seq="0" line="12" col="33" type="class">
+          <TYPE  line_seq="0" line="12" col="39" name="TObject"/>
+          <PUBLIC  line_seq="0" line="13" col="3" visibility="true">
+            <METHOD  line_seq="0" begin_line="14" begin_col="5" end_line="15" end_col="3" kind="procedure" name="DoStuff"/>
+          </PUBLIC>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="17" begin_col="1" end_line="26" end_col="1">
+    <METHOD  line_seq="0" begin_line="21" begin_col="1" end_line="26" end_col="1" name="TBax&lt;T1,T2&gt;.DoStuff" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="22" begin_col="1" end_line="24" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+</UNIT>

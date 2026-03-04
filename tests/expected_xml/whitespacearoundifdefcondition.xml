@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="whitespacearoundifdefcondition">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="5" end_col="1"/>
+  <IMPLEMENTATION  line_seq="0" begin_line="5" begin_col="1" end_line="21" end_col="1">
+    <METHOD  line_seq="0" begin_line="9" begin_col="1" end_line="15" end_col="1" name="Foo" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="11" begin_col="1" end_line="12" end_col="4"/>
+    </METHOD>
+    <METHOD  line_seq="0" begin_line="15" begin_col="1" end_line="21" end_col="1" name="Foo2" kind="procedure">
+      <STATEMENTS  line_seq="0" begin_line="17" begin_col="1" end_line="18" end_col="4"/>
+    </METHOD>
+  </IMPLEMENTATION>
+  <INITIALIZATION  line_seq="0" begin_line="21" begin_col="1" end_line="23" end_col="1">
+    <STATEMENTS  line_seq="0" begin_line="23" begin_col="1" end_line="23" end_col="1"/>
+  </INITIALIZATION>
+</UNIT>

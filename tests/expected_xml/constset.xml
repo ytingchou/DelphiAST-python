@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="constset">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="19" end_col="1">
+    <TYPESECTION  line_seq="0" line="5" col="1">
+      <TYPEDECL  line_seq="0" begin_line="6" begin_col="3" end_line="9" end_col="6" name="TClass">
+        <TYPE  line_seq="0" line="6" col="12" type="class">
+          <PUBLIC  line_seq="0" line="7" col="3" visibility="true">
+            <TYPESECTION  line_seq="0" line="7" col="10">
+              <TYPEDECL  line_seq="0" begin_line="8" begin_col="5" end_line="8" end_col="38" name="TInnerEnum">
+                <TYPE  line_seq="0" line="8" col="18" name="enum">
+                  <IDENTIFIER  line_seq="0" line="8" col="19" name="eOne"/>
+                  <IDENTIFIER  line_seq="0" line="8" col="25" name="eTwo"/>
+                  <IDENTIFIER  line_seq="0" line="8" col="31" name="wThree"/>
+                </TYPE>
+              </TYPEDECL>
+            </TYPESECTION>
+          </PUBLIC>
+        </TYPE>
+      </TYPEDECL>
+    </TYPESECTION>
+    <CONSTANTS  line_seq="0" line="11" col="1">
+      <CONSTANT  line_seq="0" line="12" col="3">
+        <NAME  line_seq="0" line="12" col="3" value="cConstant"/>
+        <TYPE  line_seq="0" line="12" col="14" type="set">
+          <TYPE  line_seq="0" line="12" col="21" name="TClass.TInnerEnum"/>
+        </TYPE>
+        <VALUE  line_seq="0" line="12" col="41">
+          <EXPRESSION  line_seq="0" line="12" col="41">
+            <SET  line_seq="0" line="12" col="41">
+              <ELEMENT  line_seq="0" line="13" col="7">
+                <EXPRESSION  line_seq="0" line="13" col="7">
+                  <DOT  line_seq="0" line="13" col="13">
+                    <IDENTIFIER  line_seq="0" line="13" col="7" name="TClass"/>
+                    <DOT  line_seq="0" line="13" col="24">
+                      <IDENTIFIER  line_seq="0" line="13" col="14" name="TInnerEnum"/>
+                      <IDENTIFIER  line_seq="0" line="13" col="25" name="eOne"/>
+                    </DOT>
+                  </DOT>
+                </EXPRESSION>
+              </ELEMENT>
+              <ELEMENT  line_seq="0" line="14" col="7">
+                <EXPRESSION  line_seq="0" line="14" col="7">
+                  <DOT  line_seq="0" line="14" col="13">
+                    <IDENTIFIER  line_seq="0" line="14" col="7" name="TClass"/>
+                    <DOT  line_seq="0" line="14" col="24">
+                      <IDENTIFIER  line_seq="0" line="14" col="14" name="TInnerEnum"/>
+                      <IDENTIFIER  line_seq="0" line="14" col="25" name="eTwo"/>
+                    </DOT>
+                  </DOT>
+                </EXPRESSION>
+              </ELEMENT>
+              <ELEMENT  line_seq="0" line="15" col="7">
+                <EXPRESSION  line_seq="0" line="15" col="7">
+                  <DOT  line_seq="0" line="15" col="13">
+                    <IDENTIFIER  line_seq="0" line="15" col="7" name="TClass"/>
+                    <DOT  line_seq="0" line="15" col="24">
+                      <IDENTIFIER  line_seq="0" line="15" col="14" name="TInnerEnum"/>
+                      <IDENTIFIER  line_seq="0" line="15" col="25" name="wThree"/>
+                    </DOT>
+                  </DOT>
+                </EXPRESSION>
+              </ELEMENT>
+            </SET>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+    </CONSTANTS>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="19" begin_col="1" end_line="21" end_col="1"/>
+</UNIT>

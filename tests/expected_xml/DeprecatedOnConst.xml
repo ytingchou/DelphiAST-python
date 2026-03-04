@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<UNIT  line_seq="0" line="1" col="1" name="DeprecatedOnConst">
+  <INTERFACE  line_seq="0" begin_line="3" begin_col="1" end_line="10" end_col="1">
+    <CONSTANTS  line_seq="0" line="5" col="1">
+      <CONSTANT  line_seq="0" line="6" col="3">
+        <NAME  line_seq="0" line="6" col="3" value="MyConst"/>
+        <VALUE  line_seq="0" line="6" col="13">
+          <EXPRESSION  line_seq="0" line="6" col="13">
+            <LITERAL  line_seq="0" line="6" col="20" value="test" type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="7" col="3">
+        <NAME  line_seq="0" line="7" col="3" value="MyConst2"/>
+        <VALUE  line_seq="0" line="7" col="14">
+          <EXPRESSION  line_seq="0" line="7" col="14">
+            <LITERAL  line_seq="0" line="7" col="22" value="test2" type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+      <CONSTANT  line_seq="0" line="8" col="3">
+        <NAME  line_seq="0" line="8" col="3" value="MyConst3"/>
+        <VALUE  line_seq="0" line="8" col="14">
+          <EXPRESSION  line_seq="0" line="8" col="14">
+            <LITERAL  line_seq="0" line="8" col="22" value="test4" type="string"/>
+          </EXPRESSION>
+        </VALUE>
+      </CONSTANT>
+    </CONSTANTS>
+  </INTERFACE>
+  <IMPLEMENTATION  line_seq="0" begin_line="10" begin_col="1" end_line="11" end_col="1"/>
+</UNIT>
