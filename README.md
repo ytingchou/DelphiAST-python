@@ -44,3 +44,10 @@ python3 -m delphiast.demos.project_indexer_demo fixtures/Demo/ProjectIndexer/dem
   `DELPHIAST_ALLOW_FPC_BUILD=1` (requires `fpc` in `PATH`).
 - Fallback build output defaults to `~/.cache/delphiast/native_build`.
 - You can override fallback build location with `DELPHIAST_BUILD_DIR`.
+
+## GitHub / PyPI
+
+- CI workflow: `.github/workflows/ci.yml`
+- Publish workflow: `.github/workflows/publish.yml`
+  - Triggered on GitHub Release publication or manual dispatch.
+  - Uses trusted publishing (`id-token: write`).
