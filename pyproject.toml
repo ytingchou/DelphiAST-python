@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "delphiast-python"
 version = "0.1.0"
-description = "Python 3.11 bridge implementation of DelphiAST"
+description = "Pure Python 3.11 implementation of DelphiAST APIs"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "DelphiAST maintainers" }]
@@ -23,20 +23,10 @@ delphiast-project-indexer-demo = "delphiast.demos.project_indexer_demo:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-include-package-data = true
+include-package-data = false
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.package-data]
-delphiast = [
-  "_vendor/**/*.pas",
-  "_vendor/**/*.inc",
-  "_vendor/**/*.lpr",
-  "_vendor/**/*.rsj",
-  "_vendor/bin/**/delphiast_parse_to_xml",
-  "_vendor/bin/**/delphiast_parse_to_xml.exe",
-]
 
 [tool.pytest.ini_options]
 minversion = "8.0"

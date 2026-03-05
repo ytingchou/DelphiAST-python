@@ -10,12 +10,6 @@ venv/
 build/
 dist/
 
-# Native bridge build output
-.native_build/
-src/delphiast/_vendor/bin/**/*.o
-src/delphiast/_vendor/bin/**/*.ppu
-src/delphiast/_vendor/bin/**/*.rsj
-
 # Editors / OS
 .DS_Store
 .idea/
