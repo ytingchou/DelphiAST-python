@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import os
+import platform
 from pathlib import Path
 import subprocess
 
@@ -37,6 +38,20 @@ _BUILD_DIR = Path(
 )
 _TOOL_SOURCE = _VENDOR_ROOT / "tools" / "pascal_bridge" / "delphiast_parse_to_xml.lpr"
 _TOOL_BINARY = _BUILD_DIR / "delphiast_parse_to_xml"
+_ALLOW_FPC_BUILD = os.environ.get("DELPHIAST_ALLOW_FPC_BUILD", "0") == "1"
+
+
+def _platform_dir_name() -> str:
+    system = platform.system().lower()
+    machine = platform.machine().lower()
+    if machine in {"amd64", "x64"}:
+        machine = "x86_64"
+    return f"{system}-{machine}"
+
+
+def _packaged_binary() -> Path:
+    name = "delphiast_parse_to_xml.exe" if os.name == "nt" else "delphiast_parse_to_xml"
+    return _VENDOR_ROOT / "bin" / _platform_dir_name() / name
 
 
 def _fpc_command() -> list[str]:
@@ -56,6 +71,18 @@ def _fpc_command() -> list[str]:
 
 
 def ensure_parser_binary() -> Path:
+    packaged = _packaged_binary()
+    if packaged.exists():
+        # The wheel can ship a non-executable bit depending on build environment.
+        packaged.chmod(packaged.stat().st_mode | 0o111)
+        return packaged
+
+    if not _ALLOW_FPC_BUILD:
+        raise NativeParserBuildError(
+            "No bundled native parser for this platform and fallback build is disabled. "
+            "Set DELPHIAST_ALLOW_FPC_BUILD=1 to enable FPC compilation fallback."
+        )
+
     _BUILD_DIR.mkdir(parents=True, exist_ok=True)
     if not _SOURCE_ROOT.exists():
         raise NativeParserBuildError(

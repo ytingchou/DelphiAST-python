@@ -38,6 +38,9 @@ python3 -m delphiast.demos.project_indexer_demo fixtures/Demo/ProjectIndexer/dem
 
 ## Notes
 
-- Requires `fpc` available in `PATH` at runtime.
-- Native helper output is cached at `~/.cache/delphiast/native_build` by default.
-- You can override cache/build location via `DELPHIAST_BUILD_DIR`.
+- Runtime does not require `fpc` on platforms with a bundled native bridge binary.
+- Current bundled binary: `linux-x86_64`.
+- If your platform has no bundled binary, enable fallback compilation with:
+  `DELPHIAST_ALLOW_FPC_BUILD=1` (requires `fpc` in `PATH`).
+- Fallback build output defaults to `~/.cache/delphiast/native_build`.
+- You can override fallback build location with `DELPHIAST_BUILD_DIR`.

@@ -34,6 +34,8 @@ delphiast = [
   "_vendor/**/*.inc",
   "_vendor/**/*.lpr",
   "_vendor/**/*.rsj",
+  "_vendor/bin/**/delphiast_parse_to_xml",
+  "_vendor/bin/**/delphiast_parse_to_xml.exe",
 ]
 
 [tool.pytest.ini_options]
