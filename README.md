@@ -1,12 +1,11 @@
 # DelphiAST Python
 
-Python 3.11 package for DelphiAST with a bundled FreePascal bridge.
+Pure Python 3.11 package for DelphiAST-style APIs.
 
 ## Highlights
 
 - Delphi-style Python API (`TPasSyntaxTreeBuilder`, `TProjectIndexer`, `TSyntaxTreeWriter`)
-- Bundled DelphiAST Pascal source under `src/delphiast/_vendor/Source`
-- Native bridge helper in `src/delphiast/_vendor/tools/pascal_bridge`
+- Pure Python parser backend (no external compiler/runtime dependency)
 - Pytest suite with fixture corpus and XML golden outputs
 
 ## Install (dev)
@@ -26,7 +25,7 @@ pytest
 ## Regenerate golden XML
 
 ```bash
-./scripts/generate_golden_from_pascal.sh
+python3 scripts/generate_golden.py
 ```
 
 ## Demo
@@ -38,12 +37,7 @@ python3 -m delphiast.demos.project_indexer_demo fixtures/Demo/ProjectIndexer/dem
 
 ## Notes
 
-- Runtime does not require `fpc` on platforms with a bundled native bridge binary.
-- Current bundled binary: `linux-x86_64`.
-- If your platform has no bundled binary, enable fallback compilation with:
-  `DELPHIAST_ALLOW_FPC_BUILD=1` (requires `fpc` in `PATH`).
-- Fallback build output defaults to `~/.cache/delphiast/native_build`.
-- You can override fallback build location with `DELPHIAST_BUILD_DIR`.
+- Runtime is pure Python and does not require `fpc` or a bundled native binary.
 
 ## GitHub / PyPI
 
